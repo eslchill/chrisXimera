@@ -1,6 +1,14 @@
 ---
 name: English Grammar Activities
-description: A collection of English grammar questions.
+description: A collection of online English grammar activities.
 ---
 
 grammarExample/grammarExample
+
+simplePast
+  simplePast/overview
+  simplePast/receptive
+  simplePast/productive
+relativeClauses
+  relativeClauses/introduction
+  relativeClauses/restrictiveVsNonrestrictive
