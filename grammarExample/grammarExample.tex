@@ -1,49 +1,56 @@
-\documentclass[numbers,handout,twoside]{ximera}
+\documentclass{ximera}
+%% handout
+%% nohints
+%% space
+%% newpage
+%% numbers
 
-%%\input{./firstExample/preamble.tex}
-%%\input{./secondExample/preamble.tex}
-%%\input{./preamble.tex}
+\input{preamble.tex} %% we can turn off input when making a master document
 
-\let\masterdocument\document
-\let\endmasterdocument\enddocument
-\let\otherinput\input %% Numbering starts a page too soon without this
-\newcommand{\masterinput}[1]{\otherinput{#1}\clearpage} %% Numbering starts a page too soon without this
+\outcome{Distinguish between simple past tense and other tenses.}
 
-\begin{masterdocument}
+\title{Grammar Example}
+\begin{document}
+\begin{abstract}
+The simple past tense is used for completed actions in the past.
+\end{abstract}
+\maketitle
 
-\begin{titlepage}
-    \vspace*{1in}
-    \begin{center}
-      {\Huge \bfseries Example activity collection}\\[0.5cm]
-      {\Large Chris Hill}\\[0.4cm]
-      This document was typeset on \today.
-    \end{center}
-    %\vspace*{\fill}
-  \end{titlepage}
-\setcounter{page}{2}
+\begin{question}
+Jim went to the store yesterday.
 
-\makeatletter
-\newpagestyle{contents}{
-\sethead[\textsl{Contents}][][] % even
-{}{}{\textsl{Contents}} % odd
-\setfoot[\thepage][][] % even
-{}{}{\thepage} % odd
-}
-\pagestyle{contents}
-\makeatother
+\begin{solution}
+\begin{hint}
+This action is complete.
+\end{hint}
+\begin{hint}
+This action occurred yesterday.
+\end{hint}
+\begin{hint}
+Yesterday is in the past.
+\end{hint}
+What tense is the verb in this sentence?answer{past}
+\end{solution}
+\end{question}
 
-\tableofcontents
+\begin{question}
+Bart ate a sandwich for lunch.
+\begin{solution}
+What tense is the verb in this sentence?
+\begin{multiple-choice}
+\choice[correct]{simple past}
+\choice{simple present}
+\choice{simple future}
+\choice{present perfect}
+\choice{past progressive}
+\end{multiple-choice}
+\begin{hint}
+Lunch in complete.
+\end{hint}
+\begin{hint}
+Lunch is in the past.
+\end{hint}
+\end{solution}
+\end{question}
 
-
-\renewcommand{\documentclass}{\setbox0\vbox}
-\renewcommand{\input}{\setbox0\vbox}
-\renewenvironment{document}{}{}
-
-\clearpage
-\pagestyle{main}
-
-%%\masterinput{./firstExample/firstExample.tex}
-
-%%\masterinput{./secondExample/secondExample.tex}
-
-\end{masterdocument}
+\end{document}
